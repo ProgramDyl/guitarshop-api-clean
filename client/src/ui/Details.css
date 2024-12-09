@@ -1,0 +1,68 @@
+:root {
+  --primary-color: #324376; /* dark blue */
+  --secondary-color: #28a745; /* soft green */
+  --highlight-color: #F5DD90; /* soft yellow */
+  --background-color: #F5F5F5; /* light grey */
+  --text-color: #333; /* dark grey */
+  --button-color: #324376; /* dark blue */
+  --button-text-color: #fff; /* white */
+  --border-color: #ddd; /* light grey for borders */
+}
+
+/* Container styling */
+.details-container {
+  background-color: var(--background-color);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Title styling */
+.details-container h1 {
+  color: var(--primary-color);
+  text-align: center; 
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase; /* Adds emphasis */
+}
+
+/* Price styling */
+.details-container h3 {
+  color: var(--secondary-color);
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Button styling */
+.details-container button {
+  background-color: var(--button-color);
+  color: var(--button-text-color);
+  border: none;
+  padding: 10px 20px;
+  margin: 10px 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.details-container button:hover {
+  background-color: var(--secondary-color);
+}
+
+/* List styling */
+.additional-details .list-group-item {
+  background-color: var(--background-color);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.details-container p {
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text-color);
+  text-align: center;
+  margin-bottom: 20px;
+}

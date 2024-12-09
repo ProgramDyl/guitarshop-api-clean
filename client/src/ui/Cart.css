@@ -1,0 +1,102 @@
+/* Base styles to maintain consistency */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, #003135, #141619); /* Unified background */
+}
+
+/* Cart container styles */
+.cart-container {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: #fbe9d0;
+    max-width: 800px;
+    margin: auto;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.7); /* Slightly transparent background for contrast */
+    margin-top: 50px;
+}
+
+h1 {
+    color: #e94560;
+    margin-bottom: 20px;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.cart-item {
+    background: #303C6C;
+    color: #fff;
+    border: none;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px;
+    margin: 10px auto;
+    padding: 15px;
+}
+
+.cart-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.img-thumbnail {
+    width: auto;
+    height: auto;
+    border-bottom: 3px solid #e94560;
+    margin-right: 15px;
+}
+
+h4 {
+    font-weight: bold;
+    color: #D2FDFF;
+    font-size: 1.45rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    color: #FBE8A6;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn-primary {
+    background-color: #e64833;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #d32f2f;
+}
+
+.btn-secondary {
+    background-color: #505050;
+    border: none;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+}
+
+.btn-secondary:hover {
+    background-color: #404040;
+}
+
+/* Utility classes for spacing */
+.mt-3 {
+    margin-top: 1rem;
+}
+
+.ml-2 {
+    margin-left: 0.5rem;
+}

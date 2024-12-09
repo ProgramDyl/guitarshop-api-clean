@@ -1,0 +1,80 @@
+.home-container {
+    padding: 20px;
+    background: linear-gradient(135deg, #003135, #141619);
+    border-radius: 10px;
+    text-align: center;
+    color: #fbe9d0;
+}
+
+.inventory-title {
+    color: #303C6C;
+    margin-bottom: 20px;
+    font-size: 5rem;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.card-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background: #303C6C;
+    color: #fff;
+    border: none;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 300px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.thumbnail {
+    width: 100%;
+    height: auto;
+    border-bottom: 3px solid #e94560;
+}
+
+.card-title {
+    font-weight: bold;
+    color: #D2FDFF;
+    font-size: 1.45rem;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 10px;
+}
+
+.card-cost {
+    color: #FBE8A6;
+    font-size: 1.7rem;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 0;
+}
+
+.card-description .description {
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    background-color: #e64833;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #d32f2f;
+}

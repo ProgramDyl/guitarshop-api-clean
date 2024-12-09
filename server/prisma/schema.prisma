@@ -1,0 +1,61 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model guitars {
+  product_id      Int      @id @default(autoincrement())     
+  brand           String   
+  model           String
+  year            Int
+  description     String   
+  body            String
+  color           String
+  is_electric     Boolean  @default(true) 
+  scale           Float  @default(0.00) 
+  cost            Float  @default(0.00) 
+  image_filename  String
+  createdAt       DateTime @default(now())  
+  updatedAt       DateTime @updatedAt
+
+  PurchaseItem    PurchaseItem[]  // Back relation
+}
+
+model customer {
+  customer_id     Int      @id @default(autoincrement())
+  email           String   @unique
+  password        String
+  first_name      String
+  last_name       String
+}
+
+model Purchase {
+  purchase_id     Int     @id @default(autoincrement())
+  customer_id     Int
+  street          String  
+  city            String
+  province        String
+  country         String    
+  postal_code     String
+  credit_card     BigInt
+  credit_expire   DateTime    
+  credit_cvv      Int
+  order_date      DateTime  @default(now()) 
+
+  PurchaseItem PurchaseItem[]
+}
+
+model PurchaseItem {
+  purchase_id     Int
+  product_id      Int
+  quantity        Int
+
+  @@id([purchase_id, product_id])
+
+  purchase    Purchase @relation(fields: [purchase_id], references: [purchase_id])
+  product     guitars  @relation(fields: [product_id], references: [product_id])
+}
